@@ -1,11 +1,21 @@
 function Card(props) {
     return(
-        <div>
-            <img src={props.image} alt="cardimage"/>
-            <h2>{props.title}</h2>
-            <p>{props.price}</p>
-            <p>{props.description}</p>
-            <p>Order a delivery</p>
+        <div className="card">
+            <div>
+                <img className="cardimage" src={props.image} alt="cardimage"/>
+            </div>
+            <div className="text">
+                <div className="titleprice">
+                    <h2 id="markazi">{props.title}</h2>
+                    <p className="price">{props.price}</p>
+                </div>
+                <div>
+                    <p className="description">{props.description}</p>
+                </div>
+                <div className="delivery">
+                    <p>Order a delivery</p>
+                </div>
+            </div>
         </div>
     );
 }

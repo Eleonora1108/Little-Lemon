@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(73, 94, 87);
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: -200px;
+    margin-right: -200px;
+    height: 450px;
+    overflow: visible;
+}
+
+#headerright {
+    margin-left: 200px;
+}
+
+#headerleft {
+    margin-right: 200px;
+    border-radius: 8px;
+}
+
+.headerimage {
+    height: 550px;
+    border-radius: 8px;
+    padding-top: 50px;
+}
+
+header h1 {
+    color: rgb(244, 206, 20);
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.headerp {
+    width: 550px;
+    margin-top: 0;
+}

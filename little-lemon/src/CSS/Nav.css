@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .navlist {
+    width: 100%;
+  }
+
+  .navlist ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+
+  .navlist li {
+    font-weight: bold;
+  }
+
+  .navimage img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .navimage {
+    width: 500px;
+    margin-right: 80px;
+  }
+
+
+

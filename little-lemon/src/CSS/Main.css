@@ -1,0 +1,103 @@
+main {
+    margin-top: 150px;
+}
+
+.specials {
+    display:inline-block;
+}
+
+.cards {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.text{
+    margin: 20px;
+}
+
+.titleprice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.cardimage {
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+.card {
+    background-color: rgb(237, 239, 238);
+    width: 300px;
+    border-radius: 16px 16px 0 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 0;
+}
+
+.price {
+    color: rgb(238, 153, 114);
+    margin: 0;
+}
+
+.sectionreviews {
+    margin-left: -200px;
+    margin-right: -200px;
+    margin-top: 40px;
+    background-color: rgb(237, 239, 238);
+    padding-top: 130px;
+    padding-bottom: 200px;
+}
+
+.testimonials {
+    text-align: center;
+}
+
+.reviews {
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.infoimages {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-right: -200px;
+    padding: 50px;
+}
+
+.info {
+    margin-right: 300px;
+}
+
+.articleimages {
+    position: relative;
+    margin-top: 200px;
+}
+
+.image-a {
+    height: 400px;
+    position: absolute;
+    top: -100px;
+    left: -200px;
+    z-index: 1;
+}
+
+.image-b{
+    height: 400px;
+    position: absolute;
+}
+
+.infop {
+    margin-top: 0;
+    width: 450px;
+}
