@@ -1,11 +1,44 @@
 nav {
-    display: flex;
-    align-items: center;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #f5f5f5;
+  height: 80px;
+}
 
-  .navlist {
-    width: 100%;
-  }
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1500px;
+  margin-left: 5rem;
+  margin-right: 8rem;
+  height: 80px;
+}
+
+.navimage {
+  margin-right: 200px;
+  justify-self: start;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  min-width: 200px;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.navlist {
+  width: 100%;
+}
 
   .navlist ul {
     list-style: none;
@@ -15,8 +48,17 @@ nav {
     padding: 0;
   }
 
-  .navlist li {
+  .nav-links {
+    display: flex;
+    align-items: center;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
+    height: 100%;
+  }
+
+  .nav-links:hover {
+    border-bottom: 2px solid black;
   }
 
   .navimage img {
@@ -24,9 +66,70 @@ nav {
     width: 100%;
   }
 
-  .navimage {
-    width: 500px;
-    margin-right: 80px;
+  .menu-icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 1350px) {
+    .NavbarItems {
+      position: relative;
+    }
+
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 70vh;
+      position: absolute;
+      top: 50px;
+      left: -100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+      background: rgb(73, 94, 87);
+      left: 0;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+      padding-bottom: 20px;
+    }
+
+    .nav-links {
+      text-align: center;
+      display: table;
+      color: #f5f5f5;
+      width: 100%;
+      padding-top: 20px;
+    }
+
+    .nav-links:hover {
+      background-color: #f5f5f5;
+      color: #242424;
+      border-radius: 0;
+    }
+
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+
+    .menu-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .fa-times {
+      font-size: 2rem;
+    }
   }
 
 

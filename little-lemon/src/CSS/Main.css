@@ -1,21 +1,38 @@
 main {
-    margin-top: 150px;
+    margin-top: 250px;
+}
+
+.sectionspecials, .section-wrapper, .infoimages {
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.h2specials {
+    display: inline-block;
+}
+
+.onlinemenu {
+    display: inline-block;
 }
 
 .specials {
-    display:inline-block;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cards {
     display:flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 40px;
 }
 
 .text{
     margin: 20px;
+    height: 340px;
 }
 
 .titleprice {
@@ -33,10 +50,21 @@ main {
 .card {
     background-color: rgb(237, 239, 238);
     width: 300px;
+    min-width: 300px;
     border-radius: 16px 16px 0 0;
     margin-top: 30px;
     margin-bottom: 30px;
+    margin-left: 3rem;
     padding-bottom: 0;
+    position: relative;
+}
+
+.delivery {
+    display: flex;
+    align-items: baseline;
+    position: absolute;
+    bottom: 0;
+    font-weight: bold;
 }
 
 .price {
@@ -45,8 +73,6 @@ main {
 }
 
 .sectionreviews {
-    margin-left: -200px;
-    margin-right: -200px;
     margin-top: 40px;
     background-color: rgb(237, 239, 238);
     padding-top: 130px;
@@ -58,46 +84,65 @@ main {
 }
 
 .reviews {
-    margin-left: 200px;
-    margin-right: 200px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
+}
+
+.review-box {
+    margin-right: 3rem;
 }
 
 .infoimages {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-between;
     margin-top: 80px;
-    margin-right: -200px;
-    padding: 50px;
+    align-items: center;
 }
 
 .info {
-    margin-right: 300px;
+    max-width: 450px;
 }
 
-.articleimages {
-    position: relative;
-    margin-top: 200px;
+.image-main {
+    max-width: 600px;
 }
 
-.image-a {
-    height: 400px;
-    position: absolute;
-    top: -100px;
-    left: -200px;
-    z-index: 1;
+
+
+@media screen and (max-width:1350px) {
+    .infoimages {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image-container {
+        margin-top: 80px;
+    }
 }
 
-.image-b{
-    height: 400px;
-    position: absolute;
+@media screen and (max-width: 1300px) {
+    main {
+        margin-top: 600px;
+    }
 }
 
-.infop {
-    margin-top: 0;
-    width: 450px;
+@media screen and (max-width: 1100px) {
+    .image-main {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 966px) {
+    .specials {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 655px) {
+    main {
+        margin-top: 700px;
+    }
 }

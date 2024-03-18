@@ -1,18 +1,17 @@
-import owners from "./Images/Mario and Adrian A.jpg";
-import ownerstwo from "./Images/Mario and Adrian b.jpg";
 import Card from './Card';
 import Review from "./Review";
 import greeksalad from "./Images/greek salad.jpg"
 import bruschetta from "./Images/bruschetta.jpg"
 import lemondessert from "./Images/lemon dessert.jpg"
+import mario from "./Images/Mario.png"
 
 function Main() {
     return (
         <main>
-            <section>
-                <article className="spacials">
-                    <h2>Specials</h2>
-                    <button>Online Menu</button>
+            <section className='sectionspecials'>
+                <article className="specials">
+                    <h2 className="h2specials">Specials</h2>
+                    <button className="onlinemenu">Online Menu</button>
                 </article>
                 <article className="cards">
                     <Card
@@ -36,30 +35,32 @@ function Main() {
                 </article>
             </section>
             <section className="sectionreviews">
-                <article className="testimonials">
-                    <h2 id="markazi">Testimonials</h2>
-                </article>
-                <article className="reviews">
-                    <Review
-                    rating="rating"
-                    name="name"
-                    text="text"/>
-                    <Review
-                    rating="rating"
-                    name="name"
-                    text="text"/>
-                    <Review
-                    rating="rating"
-                    name="name"
-                    text="text"/>
-                    <Review
-                    rating="rating"
-                    name="name"
-                    text="text"/>
-                </article>
+                <section className='section-wrapper'>
+                    <article className="testimonials">
+                        <h2 id="markazi">Testimonials</h2>
+                    </article>
+                    <article className="reviews">
+                        <Review
+                        rating="rating"
+                        name="name"
+                        text="text"/>
+                        <Review
+                        rating="rating"
+                        name="name"
+                        text="text"/>
+                        <Review
+                        rating="rating"
+                        name="name"
+                        text="text"/>
+                        <Review
+                        rating="rating"
+                        name="name"
+                        text="text"/>
+                    </article>
+                </section>
             </section>
             <section className="infoimages">
-                <article className="info">
+                <div className="info">
                     <h1 className="title" id="markazi">Little Lemon</h1>
                     <h2 className="subtitle" id="markazi">Chicago</h2>
                     <p className="infop">
@@ -68,11 +69,8 @@ function Main() {
                         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
                         Velit officia consequat duis enim velit mollit.
                     </p>
-                </article>
-                <article className="articleimages">
-                    <img className="image-a" src={owners} alt="owners"/>
-                    <img className="image-b" src={ownerstwo} alt="ownerstwo"/>
-                </article>
+                </div>
+                <div className='image-container'><img className="image-main" src={mario} alt="owners"/></div>
             </section>
         </main>
     );

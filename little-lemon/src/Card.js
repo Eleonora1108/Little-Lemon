@@ -13,7 +13,7 @@ function Card(props) {
                     <p className="description">{props.description}</p>
                 </div>
                 <div className="delivery">
-                    <p>Order a delivery</p>
+                    <p>Order a delivery </p>
                 </div>
             </div>
         </div>

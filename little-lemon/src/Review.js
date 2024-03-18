@@ -1,6 +1,6 @@
 function Review(props){
     return(
-        <div>
+        <div className='review-box'>
             <h1>{props.rating}</h1>
             <img src={props.image} alt="review"/>
             <p>{props.name}</p>
