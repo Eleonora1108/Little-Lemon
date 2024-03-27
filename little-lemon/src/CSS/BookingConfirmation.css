@@ -1,0 +1,28 @@
+.confirmation-container {
+    display: flex;
+    justify-content: center;
+    padding-left: 8rem;
+    padding-right: 8rem;
+}
+
+.fireworks-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.fireworks-wrapper > img {
+    width: 400px;
+}
+
+.confirmation-text {
+    max-width: 600px;
+}
+
+.confirmation-text > p {
+    font-size: 17pt;
+}
+
+.confirmation-title {
+    font-size: 40pt;
+}

@@ -4,6 +4,7 @@ import greeksalad from "./Images/greek salad.jpg"
 import bruschetta from "./Images/bruschetta.jpg"
 import lemondessert from "./Images/lemon dessert.jpg"
 import mario from "./Images/Mario.png"
+import userimage from './Images/userimage.png'
 
 function Main() {
     return (
@@ -41,21 +42,20 @@ function Main() {
                     </article>
                     <article className="reviews">
                         <Review
-                        rating="rating"
-                        name="name"
-                        text="text"/>
+                        rating="4 stars"
+                        image={userimage}
+                        name="Ben"
+                        text="The food is very good and the staff is lovely."/>
                         <Review
-                        rating="rating"
-                        name="name"
-                        text="text"/>
+                        rating="5 stars"
+                        image={userimage}
+                        name="Tilly"
+                        text="Best restaurant in town!"/>
                         <Review
-                        rating="rating"
-                        name="name"
-                        text="text"/>
-                        <Review
-                        rating="rating"
-                        name="name"
-                        text="text"/>
+                        rating="4 stars"
+                        image={userimage}
+                        name="Nora"
+                        text="We had a great experience, can't wait to go back"/>
                     </article>
                 </section>
             </section>

@@ -1,6 +1,5 @@
 import Header from '../Header';
 import Main from '../Main';
-import Footer from '../Footer';
 import '../CSS/Header.css';
 import '../CSS/Main.css';
 import '../CSS/Footer.css';
@@ -11,7 +10,6 @@ function Home() {
     <>
       <Header/>
       <Main/>
-      <Footer/>
     </>
   );
 }

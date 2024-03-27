@@ -1,10 +1,11 @@
 import React from 'react'
+import BookingForm from '../BookingForm'
 
 function Reservations() {
   return (
-    <div>
-      
-    </div>
+    <>
+      <BookingForm/>
+    </>
   )
 }
 

@@ -8,6 +8,8 @@ import Menu from './pages/Menu';
 import Reservations from './pages/Reservations';
 import OrderOnline from './pages/OrderOnline';
 import LogIn from './pages/LogIn';
+import BookingConfirmation from './BookingConfirmation.js';
+import Footer from './Footer.js'
 
 function App() {
   return (
@@ -21,7 +23,9 @@ function App() {
           <Route path='/reservations' exact Component={Reservations}/>
           <Route path='/order-online' exact Component={OrderOnline}/>
           <Route path='/log-in' exact Component={LogIn}/>
+          <Route path="/confirmed" exact Component = {BookingConfirmation}/>
         </Routes>
+        <Footer/>
       </Router>
     </>
   );

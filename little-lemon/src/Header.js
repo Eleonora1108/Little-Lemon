@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import image from "./Images/restauranfood.jpg"
 
 function Header(){
@@ -14,7 +15,7 @@ function Header(){
                         </p>
                     </div>
                     <div className='hader-button'>
-                        <button>Reserve a table</button>
+                        <button ><Link to='/reservations'className="link-reservations">Reserve a table</Link></button>
                     </div>
                 </section>
                 <section id="headerleft">
