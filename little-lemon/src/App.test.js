@@ -1,5 +1,5 @@
 import { fireEvent, render, screen } from '@testing-library/react';
-import Booking from './components/Booking';
+import BookingForm from './components/BookingForm';
 import { fetchAPI } from "./utils/mockAPI.js";
 import { updateTimes, initializeTimes } from './components/Booking';
 const mockUsedNavigate = jest.fn();
