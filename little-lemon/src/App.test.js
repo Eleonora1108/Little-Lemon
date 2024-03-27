@@ -8,11 +8,10 @@ jest.mock('react-router-dom', () => ({
   useNavigate: () => mockUsedNavigate,
 }));
 
-/* BOOKING TESTS */
 describe("Booking component tests", () => {
   test('Renders the Booking heading', () => {
-      render(<Booking />);
-      const headingElement = screen.getByText("Book a Table!");
+      render(<BookingForm />);
+      const headingElement = screen.getByText("FIND YOUR TABLE");
       expect(headingElement).toBeInTheDocument();
   });
 
@@ -45,7 +44,7 @@ describe("Booking component tests", () => {
       expect(newState).toEqual(state);
   });
   test('Cannot submit form (submit button disabled) with a date in the past', () => {
-    render(<Booking />);
+    render(<BookingForm />);
     const pastDate = "1990/01/01";
     const dateInput = screen.getByLabelText(/Date */);
     fireEvent.change(dateInput, { target: { value: pastDate } });
@@ -54,7 +53,7 @@ describe("Booking component tests", () => {
     expect(submitButton).toBeDisabled();
   });
   test('Cannot submit form (submit button disabled) with number of guests out of range (too small)', () => {
-    render(<Booking />);
+    render(<BookingForm />);
     const noGuests = "0";
     const guestsInput = screen.getByLabelText(/Number of Guests */);
     fireEvent.change(guestsInput, { target: { value: noGuests } });
@@ -63,7 +62,7 @@ describe("Booking component tests", () => {
     expect(submitButton).toBeDisabled();
   });
   test('Cannot submit form (submit button disabled) with number of guests out of range (too large)', () => {
-    render(<Booking />);
+    render(<BookingForm />);
     const tooManyGuests = "11";
     const guestsInput = screen.getByLabelText(/Number of Guests */);
     fireEvent.change(guestsInput, { target: { value: tooManyGuests } });
@@ -72,8 +71,7 @@ describe("Booking component tests", () => {
     expect(submitButton).toBeDisabled();
   });
   test('Can submit form with valid fields', () => {
-    render(<Booking />);
-    // The default selections for all fields are valid.
+    render(<BookingForm />);
     const submitButton = screen.getByRole("button");
     expect(submitButton).not.toBeDisabled();
   })
